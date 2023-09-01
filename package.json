@@ -1,22 +1,28 @@
 {
-  "name": "three-playground",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "20.5.7",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
-    "next": "13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.2.2"
-  }
+   "name": "three-playground",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+   },
+   "dependencies": {
+      "@react-three/fiber": "^8.13.7",
+      "@types/node": "20.5.7",
+      "@types/react": "18.2.21",
+      "@types/react-dom": "18.2.7",
+      "eslint": "8.48.0",
+      "eslint-config-next": "13.4.19",
+      "next": "13.4.19",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "the-new-css-reset": "^1.9.0",
+      "typescript": "5.2.2"
+   },
+   "devDependencies": {
+      "glslify-loader": "^2.0.0",
+      "raw-loader": "^4.0.2"
+   }
 }
