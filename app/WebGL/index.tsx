@@ -6,10 +6,10 @@ import { Playground } from "./Playground";
 import { PerformanceMonitor, StatsGl } from "@react-three/drei";
 
 export const WebGLCanvas = () => {
-   const [dpr, setDpr] = useState(1.5);
+   const [dpr, setDpr] = useState(2);
 
    return (
-      <Canvas dpr={dpr}>
+      <Canvas dpr={2}>
          <PerformanceMonitor
             factor={1}
             onChange={({ factor }) => {

@@ -27,7 +27,7 @@ export const Playground = () => {
    return (
       <mesh>
          <planeGeometry args={[2, 2]} />
-         <webGLMaterial key={WebGLMaterial} ref={ref} />
+         <webGLMaterial key={WebGLMaterial.key} ref={ref} />
       </mesh>
    );
 };
