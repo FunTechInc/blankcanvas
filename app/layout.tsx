@@ -6,8 +6,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
-   title: "three-playground",
-   description: "three-playground",
+   title: "Blank canvas | 🎨 Blank canvas for WebGL",
+   description: "🎨 Blank canvas for WebGL",
 };
 
 export default function RootLayout({

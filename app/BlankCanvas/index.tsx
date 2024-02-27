@@ -5,7 +5,7 @@ import { Canvas } from "@react-three/fiber";
 import { Playground } from "./Playground";
 import { PerformanceMonitor, StatsGl } from "@react-three/drei";
 
-export const WebGLCanvas = () => {
+const BlankCanvas = () => {
    const [dpr, setDpr] = useState(2);
 
    return (
@@ -24,3 +24,4 @@ export const WebGLCanvas = () => {
       </Canvas>
    );
 };
+export default BlankCanvas;
