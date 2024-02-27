@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
-   title: "Blank canvas | 🎨 Blank canvas for WebGL",
+   title: "blankcanvas | 🎨 Blank canvas for WebGL",
    description: "🎨 Blank canvas for WebGL",
 };
 

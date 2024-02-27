@@ -1,4 +1,4 @@
-# Blank canvas
+# blankcanvas
 
 ![Blank canvas](public/app-head.jpg)
 
