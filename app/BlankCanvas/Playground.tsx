@@ -22,7 +22,14 @@ export const Playground = () => {
    const ref = useRef<BlankMaterialProps>();
    const { size, viewport } = useThree();
 
-   const [updateBrush, , { output }] = useBrush({ size, dpr: viewport.dpr });
+   const [updateBrush, setBrush, { output }] = useBrush({
+      size,
+      dpr: viewport.dpr,
+   });
+
+   setBrush({
+      radius: 0.01,
+   });
 
    useFrame((props) => {
       updateBrush(props, {
