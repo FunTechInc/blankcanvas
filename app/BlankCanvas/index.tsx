@@ -23,7 +23,7 @@ const BlankCanvas = ({
             <Suspense fallback={null}>
                <Playground />
             </Suspense>
-            <StatsGl />
+            <StatsGl horizontal={false} />
          </PerformanceMonitor>
       </Canvas>
    );
