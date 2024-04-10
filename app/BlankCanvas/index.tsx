@@ -11,14 +11,14 @@ const BlankCanvas = ({
 }: {
    eventSource: HTMLElement | React.MutableRefObject<HTMLElement> | undefined;
 }) => {
-   const [dpr, setDpr] = useState(1);
+   // starts at the 1.5 and clamps the gradual dpr between 0.5 at the lowest and 2 at the highest
+   const [dpr, setDpr] = useState(1.5);
    return (
       <Canvas dpr={dpr} eventSource={eventSource} eventPrefix="client">
          <PerformanceMonitor
-            factor={1}
             onChange={({ factor }) => {
                console.log(`dpr:${dpr}`);
-               setDpr(Math.round((0.5 + 1.0 * factor) * 10) / 10);
+               setDpr(Math.round((0.5 + 1.5 * factor) * 10) / 10);
             }}>
             <Suspense fallback={null}>
                <Playground />

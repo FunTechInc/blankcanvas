@@ -1,5 +1,3 @@
-"use client";
-
 import Canvas from "./BlankCanvas";
 
 export default function Home() {
