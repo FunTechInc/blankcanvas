@@ -11,13 +11,14 @@ export default function Home() {
                justifyContent: "center",
                alignItems: "center",
                width: "100%",
+               height: "100svh",
             }}>
             <button
                style={{
                   color: "white",
-                  fontSize: "16px",
-                  width: "320px",
-                  height: "120px",
+                  fontSize: "14px",
+                  width: "240px",
+                  height: "80px",
                   backgroundColor: "rgba(0,0,0,0.6)",
                   textAlign: "center",
                   cursor: "pointer",
