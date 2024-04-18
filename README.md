@@ -2,4 +2,4 @@
 
 ![Blank canvas](public/app-head.jpg)
 
-🎨 Blank canvas for WebGL
+<a href="https://blankcanvas.vercel.app/"><img width="100%" src="public/blankcanvas.gif"/></a>
