@@ -10,7 +10,7 @@
    },
    "dependencies": {
       "@funtech-inc/spice": "^1.1.49",
-      "@funtech-inc/use-shader-fx": "^1.1.15",
+      "@funtech-inc/use-shader-fx": "^1.1.19",
       "@react-three/drei": "^9.105.4",
       "@react-three/fiber": "^8.16.2",
       "@types/node": "20.5.7",
