@@ -3,8 +3,9 @@
 import { Suspense, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Playground } from "./Playground";
-import { PerformanceMonitor, StatsGl } from "@react-three/drei";
+import { PerformanceMonitor } from "@react-three/drei";
 import { use100vh } from "@funtech-inc/spice";
+import { Perf } from "r3f-perf";
 
 const BlankCanvas = ({
    eventSource,
@@ -23,8 +24,8 @@ const BlankCanvas = ({
             <Suspense fallback={null}>
                <Playground />
             </Suspense>
-            <StatsGl horizontal={false} />
          </PerformanceMonitor>
+         <Perf position={"bottom-left"} />
       </Canvas>
    );
 };
