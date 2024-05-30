@@ -44,7 +44,7 @@ const FullHeightContainer = ({
       <div
          ref={ref}
          style={{
-            width: "100%",
+            width: "100vw",
             height: "100lvh",
             position: "fixed",
             top: 0,
