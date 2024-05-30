@@ -10,6 +10,8 @@ const metadata: Metadata = {
    description: "🎨 Blank canvas for WebGL",
 };
 
+import Canvas from "./BlankCanvas";
+
 export default function RootLayout({
    children,
 }: {
@@ -17,7 +19,9 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en" style={{ height: "100svh", overflow: "hidden" }}>
-         <body className={inter.className}>{children}</body>
+         <body className={inter.className}>
+            <Canvas>{children}</Canvas>
+         </body>
       </html>
    );
 }
