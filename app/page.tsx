@@ -3,7 +3,7 @@ import Canvas from "./BlankCanvas";
 export default function Home() {
    return (
       <Canvas>
-         <main
+         <div
             style={{
                display: "flex",
                justifyContent: "center",
@@ -24,7 +24,7 @@ export default function Home() {
                }}>
                UI (you can pointer over)
             </button>
-         </main>
+         </div>
       </Canvas>
    );
 }
