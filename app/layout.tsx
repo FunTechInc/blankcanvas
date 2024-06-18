@@ -18,7 +18,14 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
-      <html lang="en" style={{ height: "100svh", overflow: "hidden" }}>
+      <html
+         lang="en"
+         style={{
+            height: "100svh",
+            overflow: "hidden",
+            userSelect: "none",
+            touchAction: "pan-y pan-x",
+         }}>
          <body className={inter.className}>
             <Canvas>{children}</Canvas>
          </body>
