@@ -14,10 +14,11 @@ export default function Home() {
                fontSize: "14px",
                width: "240px",
                height: "80px",
-               backgroundColor: "rgba(0,0,0,0.6)",
+               backgroundColor: "rgba(0,0,0,1)",
                textAlign: "center",
                cursor: "pointer",
                pointerEvents: "auto",
+               mixBlendMode: "color",
             }}>
             UI (you can pointer over)
          </button>
