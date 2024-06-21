@@ -67,6 +67,7 @@ const CanvasWrapper = ({ children }: { children: React.ReactNode }) => {
          <div
             style={{
                pointerEvents: "none",
+               position: "relative",
             }}>
             <FullHeightContainer style={{ zIndex: -100000000 }}>
                <BlankCanvas eventSource={ref} />
