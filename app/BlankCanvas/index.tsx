@@ -63,12 +63,10 @@ const CanvasWrapper = ({ children }: { children: React.ReactNode }) => {
    return (
       <div ref={ref}>
          {/* If children is less than 100svh, the target cannot be obtained, so add a div for obtaining the target. */}
-         <FullHeightContainer style={{ zIndex: 0 }} />
+         <FullHeightContainer />
          <div
             style={{
                pointerEvents: "none",
-               position: "relative",
-               zIndex: 0,
             }}>
             <FullHeightContainer style={{ zIndex: -100000000 }}>
                <BlankCanvas eventSource={ref} />
