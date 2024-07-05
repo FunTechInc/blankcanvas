@@ -1,10 +1,9 @@
 "use client";
 
-import { Suspense, useRef, useState } from "react";
+import { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Playground } from "./Playground";
 import { PerformanceMonitor } from "@react-three/drei";
-import { use100vh } from "@funtech-inc/spice";
 import { Perf } from "r3f-perf";
 
 const BlankCanvas = ({
@@ -38,15 +37,11 @@ const FullHeightContainer = ({
    children?: React.ReactNode;
    style?: React.CSSProperties;
 }) => {
-   const ref = useRef<HTMLDivElement>(null);
-   // For some mobile browsers, if the CSS is 100vh or 100lvh, the navigation bar may not be included, so by using window.screen.height, it will be displayed to fill the screen.
-   use100vh(ref);
    return (
       <div
-         ref={ref}
          style={{
             width: "100vw",
-            height: "100lvh",
+            height: "calc(var(--fixed-lvh) * 100)",
             position: "fixed",
             top: 0,
             left: 0,
