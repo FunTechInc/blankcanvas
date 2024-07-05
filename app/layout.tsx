@@ -11,6 +11,7 @@ const metadata: Metadata = {
 };
 
 import Canvas from "./BlankCanvas";
+import { AppHooks } from "./app-hooks";
 
 export default function RootLayout({
    children,
@@ -29,6 +30,7 @@ export default function RootLayout({
          <body className={inter.className}>
             <Canvas>{children}</Canvas>
          </body>
+         <AppHooks />
       </html>
    );
 }
