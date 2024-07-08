@@ -41,7 +41,7 @@ const FullHeightContainer = ({
       <div
          style={{
             width: "100vw",
-            height: "calc(var(--fixed-lvh) * 100)",
+            height: "calc(var(--stable-lvh) * 100)",
             position: "fixed",
             top: 0,
             left: 0,
