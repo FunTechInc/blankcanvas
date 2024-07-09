@@ -5,7 +5,7 @@ import { useDeviceDetector, useStarter } from "@funtech-inc/spice";
 export const AppHooks = () => {
    useStarter();
    const { testing } = useDeviceDetector((ua) => {
-      return /\bLine\b/.test(ua);
+      return /\b(Line|Instagram)\b/.test(ua);
    });
    return (
       <style jsx global>{`
