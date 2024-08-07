@@ -3,22 +3,23 @@
 import * as THREE from "three";
 import { useEffect, useRef } from "react";
 import { useFrame, useThree, extend } from "@react-three/fiber";
-import GUI from "lil-gui";
-import { useGUI } from "./hooks/useGUI";
+// import GUI from "lil-gui";
+// import { useGUI } from "./hooks/useGUI";
 import { BlankMaterialProps, BlankMaterial } from "./Material";
 import { useBrush } from "@funtech-inc/use-shader-fx";
+import { Perf } from "r3f-perf";
 
 extend({ BlankMaterial });
 
 const CONFIG = {
    color: new THREE.Color("red"),
 };
-const setGUI = (gui: GUI) => {
-   gui.addColor(CONFIG, "color");
-};
+// const setGUI = (gui: GUI) => {
+//    gui.addColor(CONFIG, "color");
+// };
 
-export const Playground = () => {
-   const updateGUI = useGUI(setGUI);
+const Scene = () => {
+   // const updateGUI = useGUI(setGUI);
    const ref = useRef<BlankMaterialProps>();
    const { size, viewport } = useThree();
 
@@ -36,7 +37,7 @@ export const Playground = () => {
          color: CONFIG.color,
       });
       ref.current!.u_time = props.clock.getElapsedTime();
-      updateGUI();
+      // updateGUI();
    });
 
    // set resolution
@@ -45,9 +46,14 @@ export const Playground = () => {
    }, [size]);
 
    return (
-      <mesh>
-         <planeGeometry args={[2, 2]} />
-         <blankMaterial key={BlankMaterial.key} u_tex={output} ref={ref} />
-      </mesh>
+      <>
+         <mesh>
+            <planeGeometry args={[2, 2]} />
+            <blankMaterial key={BlankMaterial.key} u_tex={output} ref={ref} />
+         </mesh>
+         {/* <Perf position={"bottom-left"} /> */}
+      </>
    );
 };
+
+export default Scene;

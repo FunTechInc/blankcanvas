@@ -10,8 +10,11 @@ const metadata: Metadata = {
    description: "🎨 Blank canvas for WebGL",
 };
 
-import Canvas from "./BlankCanvas";
 import { AppHooks } from "./app-hooks";
+
+// Just make sure to disable SSR for the canvas component because Worker only exists in the DOM
+import dynamic from "next/dynamic";
+const Canvas = dynamic(() => import("./BlankCanvas"), { ssr: false });
 
 export default function RootLayout({
    children,
