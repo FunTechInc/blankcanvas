@@ -8,7 +8,7 @@ import { Perf } from "r3f-perf";
 // import Scene from "./Scene";
 
 import { lazy } from "react";
-import { Canvas } from "./offscreen";
+import { Canvas } from "@funtech-inc/r3f-offscreen";
 
 // This is the fallback component that will be rendered on the main thread
 // This will happen on systems where OffscreenCanvas is not supported
