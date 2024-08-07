@@ -1,0 +1,56 @@
+{
+   "name": "@funtech-inc/r3f-offscreen",
+   "version": "0.0.4",
+   "description": "Fork from @react-three/offscreen",
+   "main": "./build/r3f-offscreen.umd.cjs",
+   "module": "./build/r3f-offscreen.js",
+   "types": "./types/index.d.ts",
+   "sideEffects": false,
+   "exports": {
+      ".": {
+         "types": "./types/index.d.ts",
+         "import": "./build/r3f-offscreen.js",
+         "require": "./build/r3f-offscreen.umd.cjs"
+      }
+   },
+   "type": "module",
+   "scripts": {
+      "type": "tsc",
+      "build": "tsc && vite build",
+      "clean": "rimraf build && rimraf types"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pmndrs/react-three-offscreen.git"
+   },
+   "keywords": [
+      "react",
+      "next"
+   ],
+   "author": "Paul Henschel",
+   "license": "MIT",
+   "files": [
+      "build",
+      "types"
+   ],
+   "devDependencies": {
+      "@types/node": "20.5.6",
+      "@types/react": "18.2.21",
+      "@types/react-dom": "18.2.7",
+      "@types/three": "^0.164.0",
+      "eslint": "8.47.0",
+      "typescript": "^5.2.2",
+      "vite": "^4.5.0",
+      "vite-plugin-glsl": "^1.1.2"
+   },
+   "dependencies": {
+      "mitt": "^3.0.1"
+   },
+   "peerDependencies": {
+      "@react-three/fiber": ">=8.13.0",
+      "react": ">=18.0",
+      "react-dom": ">=18.0",
+      "three": ">=0.155.0",
+      "zustand": ">=4.5.4"
+   }
+}

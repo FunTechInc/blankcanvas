@@ -9,6 +9,7 @@
       "lint": "next lint"
    },
    "dependencies": {
+      "@funtech-inc/r3f-offscreen": "^0.0.4",
       "@funtech-inc/spice": "^1.2.50",
       "@funtech-inc/use-shader-fx": "^1.1.42",
       "@react-three/drei": "^9.109.2",
